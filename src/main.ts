@@ -14,7 +14,7 @@ if (location.hostname !== "localhost")
     integrations: [new Sentry.BrowserTracing()],
     tracesSampleRate: 0.2,
     ...(process.env.GITHUB_SHA && {
-      release: `cdda-guide@${process.env.GITHUB_SHA.slice(0, 8)}`,
+      release: `tlg-guide@${process.env.GITHUB_SHA.slice(0, 8)}`,
     }),
   });
 
