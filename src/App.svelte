@@ -21,7 +21,7 @@ let builds:
     }[]
   | null = null;
 
-fetch("https://raw.githubusercontent.com/nornagon/cdda-data/main/builds.json")
+fetch("https://raw.githubusercontent.com/RenechCDDA/tlg-data/main/builds.json")
   .then((d) => d.json())
   .then((b) => {
     builds = b;
