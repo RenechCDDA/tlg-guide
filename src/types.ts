@@ -709,8 +709,8 @@ export type ItemBasicInfo = {
     append?: boolean;
   }[];
   brewable?: {
-    brew_results: string[] | Record<string, number>; // item_id
-    brew_time?: duration;
+    results: string[] | Record<string, number>; // item_id
+    time?: duration;
   };
   milling?: {
     into?: string; // item_id
@@ -832,7 +832,7 @@ export type FaultFix = {
   id: string;
   name: Translation;
   time: string; // duration
-  set_variables?: Record<string, string | boolean | number>;
+  set_variables?: Record<string, string>;
   skills?: Record<string, number>;
   faults_removed: string[]; // fault_id
   faults_added?: string[]; // fault_id
