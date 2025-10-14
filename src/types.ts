@@ -832,7 +832,7 @@ export type FaultFix = {
   id: string;
   name: Translation;
   time: string; // duration
-  set_variables?: Record<string, string>;
+  set_variables?: Record<string, string | boolean | number>;
   skills?: Record<string, number>;
   faults_removed: string[]; // fault_id
   faults_added?: string[]; // fault_id
