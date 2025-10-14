@@ -1474,7 +1474,7 @@ export class CddaData {
       if (Array.isArray(results)) return results;
       return Object.keys(results);
     }
-    return x.id ? normalize(x.brewable?.brew_results) : [];
+    return x.id ? normalize(x.brewable?.results) : [];
   });
   brewedFrom(item_id: string) {
     return this.#brewedFromIndex.lookup(item_id);
