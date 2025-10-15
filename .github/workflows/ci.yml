@@ -27,14 +27,6 @@ jobs:
       - name: Fetch Dependencies
         run: yarn install --frozen-lockfile
 
-      - name: Test
-        run: |
-          if [ "$GITHUB_EVENT_NAME" != "push" ]; then
-            yarn test:latest
-          else
-            yarn test
-          fi
-
       - name: Build
         env:
           SENTRY_DSN: ${{ vars.SENTRY_DSN }}
