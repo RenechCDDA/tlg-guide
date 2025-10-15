@@ -1,6 +1,5 @@
 # This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
-# This line is irrelevant, just trying to force workflows to run. (Push event)
 
 name: Run Tests
 
