@@ -11,6 +11,11 @@ on:
   schedule:
     - cron: "55 */11 * * *"
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -47,9 +52,4 @@ jobs:
 
       - name: Deploy 🚀
         if: github.event_name == 'push'
-        uses: cloudflare/pages-action@v1
-        with:
-          accountId: 38542b72de6483a07c984652797f04e1
-          projectName: tlg-guide
-          directory: dist
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        uses: actions/deploy-pages@v4
