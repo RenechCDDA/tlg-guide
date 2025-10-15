@@ -42,7 +42,7 @@ jobs:
         if: github.event_name == 'push'
         uses: cloudflare/pages-action@v1
         with:
-          accountId: 38542b72de6483a07c984652797f04e1
+          accountId: 0445e37b88c2d301a0b3c411821b29c5
           projectName: tlg-guide
           directory: dist
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
