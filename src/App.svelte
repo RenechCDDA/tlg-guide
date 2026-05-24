@@ -455,20 +455,16 @@ Anyway?`,
     <p>
       <InterpolatedTranslation
         str={t(
-          `Fork of the {link_github} for CDDA by {link_nornagon}. This copy covers The Last Generation. If you see this message, {link_source} fucked up.`,
+          `Fork of the {link_github} for CDDA by {link_nornagon}. This copy covers The Last Generation. Don't bother reporting issues anywhere, all of this is automated.`,
           {
             link_github: "{link_github}",
-            link_nornagon: "{link_nornagon}",
-            link_source: "{link_source}",
+            link_nornagon: "{link_nornagon}"
           }
         )}
         slot0="link_github"
-        slot1="link_nornagon"
-        slot2="link_source">
+        slot1="link_nornagon">
         <a slot="0" href="https://github.com/nornagon/cdda-guide">original guide</a>
         <a slot="1" href="https://www.nornagon.net">Nornagon</a>
-        <a slot="2" href="https://github.com/RenechCDDA/tlg-guide"
-          >{t("I")}</a>
       </InterpolatedTranslation>
     </p>
 
